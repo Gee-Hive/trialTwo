@@ -17,4 +17,52 @@ function scoreSheet(val1, val2){
 };
 console.log(scoreSheet(clubList[-1], clubList[-3]));
 
-let 
+let profile = [
+    {
+        name:"deborah",
+        age:23,
+        hobby:["outings", "crafting", "reading"],
+        status:"pending"
+    },
+    
+    {
+        name:"jason",
+        age:23,
+        hobby:["playing games", "surfing the internet", "reading"],
+        status:"pending"
+    },
+
+    {
+        name:"george",
+        age:29,
+        hobby:["playing games", "surfing the internet", "swimming"],
+        status:"pending"
+    },
+
+    {
+        name:"quincy",
+        age:25,
+        hobby:["watching movies", "volleyball", "reading"],
+        status:"pending"
+    },
+
+    {
+        name:"pascal",
+        age:31,
+        hobby:["surfing the internet", "reading"],
+        status:"pending"
+    },
+];
+
+function checkList(input1, input2){
+    if(input1 > input2){
+        return true
+    }else if(input1 < input2){
+        return false
+    }else{
+        return "tie"
+    }
+};
+console.log(checkList(profile[4].age, profile[2].age))
+
+
